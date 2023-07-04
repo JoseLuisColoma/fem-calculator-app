@@ -1,0 +1,254 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  display: grid;
+  place-items: center;
+  background-color: hsl(222, 26%, 31%);
+  color: white;
+  min-height: 100vh;
+}
+
+main{
+  margin-inline:10px ;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 23px;
+}
+
+header .theme {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+header .toggle {
+  width: 60px;
+  background-color: hsl(223, 31%, 20%);
+  aspect-ratio: 1 / .35;
+  border-radius: 30px;
+  padding: 3px;
+  cursor: pointer;
+  display: flex;
+  transition: .2s;
+  position: relative;
+}
+
+header .toggle::before {
+  content: "1 2 3";
+  position: absolute;
+  top: -12px;
+  width: max-content;
+  transform: translateX(-50%);
+  left: 50%;
+  word-spacing: 12px;
+}
+
+header .toggle .ball {
+  aspect-ratio: 1;
+  background-color: hsl(6, 63%, 50%);
+  height: calc(100% - 6px);
+  border-radius: 50%;
+  position: absolute;
+  transition: .2s;
+  left: 3px;
+}
+
+header .toggle .ball::before {
+  content: "";
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+  background-color: white;
+  opacity: 0;
+}
+
+header .toggle:hover .ball:before {
+  opacity: .2;
+  transition: .2s;
+}
+
+main .screen {
+  width: 430px;
+  background-color: hsl(224, 36%, 15%);
+  border-radius: 6px;
+  height: 100px;
+  margin-block: 15px;
+  font-size: 38px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: auto;
+}
+
+main .buttons {
+  display: grid;
+  padding: 20px;
+  border-radius: 6px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  background-color: hsl(223, 31%, 20%);
+  gap: 20px;
+}
+
+main .buttons span {
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+  background-color: hsl(30, 25%, 89%);
+  color: hsl(221, 14%, 31%);
+  height: 48px;
+  font-size: 30px;
+  box-shadow: 0 3px hsl(28, 16%, 65%);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+}
+
+main .buttons .c-c-input:hover {
+  background-color: white;
+}
+
+main .buttons .reset,
+main .buttons .del {
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0 3px hsl(224, 28%, 35%);
+  color: white;
+  font-size: 25px;
+}
+
+main .buttons .reset:hover::before,
+main .buttons .del:hover::before,
+main .buttons .equal:hover::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  opacity: .3;
+}
+
+main .buttons .reset,
+main .buttons .equal {
+  grid-column: span 2;
+}
+
+main .buttons .equal {
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0 3px hsl(6, 70%, 34%);
+  color: white;
+  font-size: 25px;
+}
+
+
+/* Theme 3 */
+
+.theme-3 {
+  background-color: hsl(268, 75%, 9%);
+  color: hsl(52, 100%, 62%);
+}
+
+.theme-3 header .toggle,
+.theme-3 main .buttons,
+.theme-3 main .screen {
+  background-color: hsl(268, 71%, 12%);
+  color: hsl(52, 100%, 62%);
+}
+
+.theme-3 header .toggle .ball {
+  background-color: hsl(176, 100%, 44%);
+}
+
+.theme-3 main .buttons span {
+  color: hsl(52, 100%, 62%);
+  background-color: hsl(268, 47%, 21%);
+  box-shadow: 0 3px hsl(290, 70%, 36%);
+}
+
+.theme-3 main .buttons .c-input:hover {
+  background-color: hsl(281, 89%, 26%);
+}
+
+.theme-3 main .buttons .reset,
+.theme-3 main .buttons .del {
+  color: white;
+  background-color: hsl(281, 89%, 26%);
+  box-shadow: 0 3px hsl(285, 91%, 52%);
+}
+
+.theme-3 main .buttons .reset:hover::before,
+.theme-3 main .buttons .del:hover::before {
+  opacity: .15;
+}
+
+.theme-3 main .buttons .equal {
+  background-color: hsl(176, 100%, 44%);
+  box-shadow: 0 3px hsl(177, 92%, 70%);
+  color: hsl(198, 20%, 13%);
+}
+
+
+/* Theme 2 */
+
+.theme-2 {
+  background-color: hsl(0, 0%, 90%);
+  color: hsl(60, 10%, 19%);
+}
+
+.theme-2 header .toggle {
+  background-color: hsl(0, 5%, 81%);
+}
+
+.theme-2 header .toggle .ball {
+  background-color: hsl(25, 98%, 40%);
+}
+
+.theme-2 main .screen {
+  background-color: hsl(0, 0%, 93%);
+  color: hsl(60, 10%, 19%);
+}
+
+.theme-2 main .buttons {
+  background-color: hsl(0, 5%, 81%);
+}
+
+.theme-2 main .buttons span {
+  color: hsl(60, 10%, 19%);
+  background-color: hsl(45, 7%, 89%);
+  box-shadow: 0 3px hsl(35, 11%, 61%);
+}
+
+.theme-2 main .buttons .reset,
+.theme-2 main .buttons .del {
+  color: white;
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: 0 3px hsl(185, 58%, 25%);
+}
+
+.theme-2 main .buttons .equal {
+  background-color: hsl(25, 98%, 40%);
+  box-shadow: 0 3px hsl(25, 99%, 27%);
+  color: white;
+}
+
+@media (max-width:450px) {
+  main{
+    width: calc(100% - 15px);
+  }
+    main .screen{
+      width: 100%;
+    }
+}

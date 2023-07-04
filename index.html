@@ -2,25 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Calculadora app</title>
+  <author>jocodev</author>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="main.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <header>
+      <span>CALCULADORA</span>
+      <div class="theme">
+        <span>TEMA</span>
+        <div class="toggle">
+          <div class="ball"></div>
+        </div>
+      </div>
+    </header>
+    <div class="screen"></div>
+    <div class="buttons">
+      <span class="c-input">7</span>
+      <span class="c-input">8</span>
+      <span class="c-input">9</span>
+      <span class="del">DEL</span>
+      <span class="c-input">4</span>
+      <span class="c-input">5</span>
+      <span class="c-input">6</span>
+      <span class="c-input oper">+</span>
+      <span class="c-input">1</span>
+      <span class="c-input">2</span>
+      <span class="c-input">3</span>
+      <span class="c-input oper">-</span>
+      <span class="c-input oper">.</span>
+      <span class="c-input">0</span>
+      <span class="c-input oper">/</span>
+      <span class="c-input oper">x</span>
+      <span class="reset">RESET</span>
+      <span class="equal">=</span>
+    </div>
+  </main>
 </body>
+
 </html>
