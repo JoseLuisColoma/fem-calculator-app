@@ -5,53 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Calculadora app</title>
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="./css/estilos.css">
   <link rel="stylesheet" href="./css/reset.css">
-  <script src="main.js" defer></script>
+  <script src="./js/main.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <main>
-    <header>
-      <span>CALCULADORA</span>
-      <div class="theme">
-        <span>TEMA</span>
-        <div class="toggle">
-          <div class="ball"></div>
+<body class="c-body">
+  <main class="c-calculadora">
+    <header class="c-calculadora__header">
+      <span class="c-calculadora__titulo">CALCULADORA</span><span class="c-developer__link--jocodev">jocodev</span>
+      <div class="c-theme">
+        <span class="c-theme__label">TEMA</span>
+        <div class="c-theme__interruptor">
+          <div class="c-theme__bolita"></div>
         </div>
       </div>
     </header>
-    <div class="screen"></div>
-    <div class="buttons">
-      <span class="c-input">7</span>
-      <span class="c-input">8</span>
-      <span class="c-input">9</span>
-      <span class="del">DEL</span>
-      <span class="c-input">4</span>
-      <span class="c-input">5</span>
-      <span class="c-input">6</span>
-      <span class="c-input oper">+</span>
-      <span class="c-input">1</span>
-      <span class="c-input">2</span>
-      <span class="c-input">3</span>
-      <span class="c-input oper">-</span>
-      <span class="c-input oper">.</span>
-      <span class="c-input">0</span>
-      <span class="c-input oper">/</span>
-      <span class="c-input oper">x</span>
-      <span class="reset">RESET</span>
-      <span class="equal">=</span>
+    <div class="c-calculadora__pantalla"></div>
+    <div class="c-calculadora__botones">
+      <span class="c-calculadora__input">7</span>
+      <span class="c-calculadora__input">8</span>
+      <span class="c-calculadora__input">9</span>
+      <span class="c-calculadora__del">DEL</span>
+      <span class="c-calculadora__input">4</span>
+      <span class="c-calculadora__input">5</span>
+      <span class="c-calculadora__input">6</span>
+      <span class="c-calculadora__input c-calculadora__operacion">+</span>
+      <span class="c-calculadora__input">1</span>
+      <span class="c-calculadora__input">2</span>
+      <span class="c-calculadora__input">3</span>
+      <span class="c-calculadora__input c-calculadora__operacion">-</span>
+      <span class="c-calculadora__input c-calculadora__operacion">.</span>
+      <span class="c-calculadora__input">0</span>
+      <span class="c-calculadora__input c-calculadora__operacion">/</span>
+      <span class="c-calculadora__input c-calculadora__operacion">x</span>
+      <span class="c-calculadora__reset">RESET</span>
+      <span class="c-calculadora__igual">=</span>
     </div>
   </main>
   <div class="c-developer">
     <p class="c-developer__text">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener" class="c-developer__link">Frontend Mentor</a>.
-        Coded by <a href="https://github.com/JoseLuisColoma" target="_blank" rel="noopener" class="c-developer__link c-developer__link--jocotev">jocodev</a>.
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener" class="c-developer__link">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/JoseLuisColoma" target="_blank" rel="noopener" class="c-developer__link c-developer__link--jocodev">jocodev</a>.
     </p>
   </div>
 </body>
-
 </html>
