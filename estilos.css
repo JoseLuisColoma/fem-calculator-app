@@ -252,3 +252,27 @@ main .buttons .equal {
       width: 100%;
     }
 }
+
+/*atributtion*/
+.c-developer {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom:30px;
+}
+
+.c-developer__link {
+      color: steelblue;
+  }
+
+.c-developer__link:hover {
+      color: peru;
+  }
+
+.c-developer__text{
+      color:white;
+}
+
+.c-developer__link--jocotev{
+  font-size: 20px;
+}
