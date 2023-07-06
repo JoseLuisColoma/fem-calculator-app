@@ -11,6 +11,7 @@
   background-color: hsl(222, 26%, 31%);
   color: white;
   min-height: 100vh;
+  margin-top: 200px;
 }
 
 .c-calculadora {
@@ -230,8 +231,8 @@
 .c-developer {
   font-size: 16px;
   text-align: center;
-  margin-top: 100px;
-  margin-bottom:30px;
+  margin-top: 10px;
+  margin-bottom:100px;
   text-decoration: none;
 }
 
